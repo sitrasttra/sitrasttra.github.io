@@ -1,0 +1,43 @@
+section#services {
+  font-size: 1.5em;
+  text-align: center;
+  flex-direction: column;
+  gap: 50px;
+}
+section#services #services-container {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+section#services #services-container section.service {
+  margin: 20px;
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: black 0 0 15px -10px;
+  transform: translate(0, 0);
+  transition: transform 0.5s;
+}
+section#services #services-container section.service img {
+  width: 150px;
+  height: 150px;
+}
+section#services #services-container section.service div.text {
+  gap: 10px;
+}
+section#services #services-container section.service:hover {
+  transform: translate(0, -20px);
+}
+
+/*# sourceMappingURL=services.css.map */

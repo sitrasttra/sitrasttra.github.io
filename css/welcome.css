@@ -1,0 +1,16 @@
+section#welcome div.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  background-image: url("../images/bg.png");
+}
+section#welcome div.text {
+  font-size: 2em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=welcome.css.map */
