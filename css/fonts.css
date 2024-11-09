@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT ART_Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT ART_Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT ART_SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT ART_Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXT ART_Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Tupo Vyaz VF";
+  src: url("../fonts/Tupo-Vyaz/tupo-vyaz_vf.woff2") format("woff2"), url("./fonts/Tupo-Vyaz/tupo-vyaz_vf.woff") format("woff");
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */
