@@ -205,14 +205,14 @@ section#welcome div.text {
 section#about-me {
   gap: 50px;
 }
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 1024px) {
   section#about-me {
     flex-direction: column-reverse;
   }
 }
 section#about-me div.text {
   z-index: 1;
-  width: 500px;
+  width: 800px;
   font-size: 1.5em;
   font-weight: 100;
   text-align: justify;
@@ -220,7 +220,7 @@ section#about-me div.text {
   flex-direction: column;
   gap: 10px;
 }
-@media (min-width: 300px) and (max-width: 425px) {
+@media (min-width: 300px) and (max-width: 1024px) {
   section#about-me div.text {
     width: 100%;
   }
@@ -231,7 +231,7 @@ section#about-me div.text {
     font-size: 2em;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 700px) {
   section#about-me div.text {
     font-size: 1em;
   }

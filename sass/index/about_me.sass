@@ -3,13 +3,13 @@
 section#about-me
     gap: 50px
 
-    @include respond(300px, 768px)
+    @include respond(300px, 1024px)
         flex-direction: column-reverse
     
     div.text
         z-index: 1
 
-        width: 500px
+        width: 800px
 
         font-size: 1.5em
         font-weight: 100
@@ -18,12 +18,12 @@ section#about-me
         display: flex
         flex-direction: column
         gap: 10px
-        @include respond(300px, 425px)
+        @include respond(300px, 1024px)
             width: 100%
         @include respond(2000px, 2561px)
             width: 50%
             font-size: 2em
-        @include respond(300px, 500px)
+        @include respond(300px, 700px)
             font-size: 1em
 
         
