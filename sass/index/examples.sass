@@ -1,0 +1,53 @@
+@use "../global/vars" as *
+    
+section#examples
+    font-size: 1.5em
+    text-align: center
+
+    flex-direction: column
+    gap: 50px
+
+    div#examples-container
+        position: relative
+
+        height: 4000px
+        width: 100%
+
+        display: flex
+        flex-flow: column wrap
+        align-content: space-between
+
+        img
+            width: 32%
+            margin-bottom: 20px
+
+            object-fit: cover
+            box-shadow: black 0 0 15px -10px
+            scale: 1
+
+            transition: scale $animation-time ease
+
+        img:hover
+            scale: 1.05
+        @include respond(1700px, 2000px)
+            height: 3000px
+        @include respond(1350px, 1700px)
+            height: 2500px
+        @include respond(1020px, 1350px)
+            height: 2000px
+        @include respond(500px, 1020px)
+            height: 1500px
+    div#examples-container::before, div#examples-container::after
+        content: ""
+        flex-basis: 100%
+        width: 0
+        order: 2
+
+    img:nth-child(3n+1)
+        order: 1
+
+    img:nth-child(3n+2)
+        order: 2
+        
+    img:nth-child(3n)
+        order: 3

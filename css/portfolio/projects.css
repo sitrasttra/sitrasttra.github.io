@@ -1,0 +1,71 @@
+section.project {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-top: 5px solid #1b1b1b;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+section.project p {
+  font-size: 2em;
+  text-align: justify;
+}
+section.project div.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+}
+section.project div.carousel button {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75px;
+  aspect-ratio: 1/1;
+  font-size: 64px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border 0.5s;
+  user-select: none;
+}
+section.project div.carousel button.left {
+  left: 0;
+}
+section.project div.carousel button.right {
+  right: 0;
+}
+section.project div.carousel button:hover {
+  border: 2px solid black;
+}
+section.project div.carousel div.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s;
+}
+section.project div.carousel div.slider div.img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=projects.css.map */

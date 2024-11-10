@@ -1,0 +1,62 @@
+@use "vars" as *
+@use "fonts"
+
+
+html
+    font-family: Montserrat, sans-serif
+    font-size: $font-size
+
+*
+    margin: 0
+    border: none
+    padding: 0
+    box-sizing: border-box
+
+button
+    all: unset
+
+h1, h2
+    font-family: 'Tupo Vyaz VF', sans-serif
+    letter-spacing: 0.05em
+    font-size: 3em
+    
+a
+    text-decoration: none
+    color: inherit
+
+body
+    position: relative
+    padding-top: $header-height
+
+    min-height: 100vh
+
+    background-color: $light-grey-color
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+    color: black
+
+main
+    width: 100%
+    padding-top: 50px
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+.hidden
+    opacity: 0
+    transform: translateY($appear-slide-length)
+    transition: opacity $appear-time ease, transform $appear-time ease, scale $animation-time !important
+
+*.visible
+    opacity: 1
+    transform: translateY(0)
+
+::selection
+    background-color: $dark-grey-color
+    color: white

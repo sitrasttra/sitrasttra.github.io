@@ -1,0 +1,16 @@
+$dark-grey-color: #1b1b1b
+$light-grey-color: #f1f1f1
+$light-blue: #4285f4
+
+$font-size: 16px
+
+$animation-time: 0.5s
+$appear-time: 1s
+
+$header-height: 75px
+
+$appear-slide-length: 20px
+
+@mixin respond($lowest, $highest)
+    @media (min-width: $lowest) and (max-width: $highest)
+        @content
