@@ -1,6 +1,8 @@
 footer {
   position: absolute;
   top: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   width: 100%;
@@ -11,6 +13,26 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    height: 100px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    height: 75px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

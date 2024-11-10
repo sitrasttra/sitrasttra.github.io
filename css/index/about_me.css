@@ -45,9 +45,15 @@ button {
 }
 
 h1, h2 {
+  margin-top: 20px;
   font-family: "Tupo Vyaz VF", sans-serif;
   letter-spacing: 0.05em;
   font-size: 3em;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  h1, h2 {
+    font-size: 2em;
+  }
 }
 
 a {
@@ -58,6 +64,7 @@ a {
 body {
   position: relative;
   padding-top: 75px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;
@@ -95,6 +102,11 @@ main {
 section#about-me {
   gap: 50px;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  section#about-me {
+    flex-direction: column-reverse;
+  }
+}
 section#about-me div.text {
   z-index: 1;
   width: 500px;
@@ -105,10 +117,31 @@ section#about-me div.text {
   flex-direction: column;
   gap: 10px;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  section#about-me div.text {
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2561px) {
+  section#about-me div.text {
+    width: 50%;
+    font-size: 2em;
+  }
+}
 section#about-me div.avatar {
   position: relative;
   height: 400px;
   aspect-ratio: 1/1;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  section#about-me div.avatar {
+    height: 250px;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2561px) {
+  section#about-me div.avatar {
+    height: 500px;
+  }
 }
 section#about-me div.avatar img {
   position: relative;

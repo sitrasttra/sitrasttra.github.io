@@ -45,9 +45,15 @@ button {
 }
 
 h1, h2 {
+  margin-top: 20px;
   font-family: "Tupo Vyaz VF", sans-serif;
   letter-spacing: 0.05em;
   font-size: 3em;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  h1, h2 {
+    font-size: 2em;
+  }
 }
 
 a {
@@ -58,6 +64,7 @@ a {
 body {
   position: relative;
   padding-top: 75px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;

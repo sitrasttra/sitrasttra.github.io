@@ -1,10 +1,17 @@
+@use "../global/vars" as *
+
 section#welcome
     height: 80vh
-    padding: 0
+    padding-right: 0
+    padding-left: 20px
+    padding-bottom: 30px
 
     background-color: #c4c4c4
 
     justify-content: center
+
+    @include respond(300px, 425px)
+        flex-direction: column-reverse
 
     div.background
         width: 50%
@@ -16,6 +23,9 @@ section#welcome
         background-image: url("../../assets/bg.png")
 
         pointer-events: none
+
+        @include respond(300px, 425px)
+            width: 100%
     div.text
         width: 50%
 
@@ -25,3 +35,9 @@ section#welcome
         font-size: 2em
         letter-spacing: auto
         text-align: center
+
+        @include respond(600px, 1024px)
+            font-size: 1.5em
+        @include respond(300px, 425px)
+            font-size: 1.5em
+            width: 100%

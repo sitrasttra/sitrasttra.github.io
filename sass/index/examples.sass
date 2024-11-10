@@ -26,6 +26,8 @@ section#examples
             scale: 1
 
             transition: scale $animation-time ease
+            @include respond(300px, 500px)
+                width: 49%
 
         img:hover
             scale: 1.05
@@ -35,19 +37,36 @@ section#examples
             height: 2500px
         @include respond(1020px, 1350px)
             height: 2000px
-        @include respond(500px, 1020px)
+        @include respond(600px, 1020px)
             height: 1500px
+        @include respond(500px, 600px)
+            height: 1200px
+        @include respond(450px, 500px)
+            height: 2000px 
+        @include respond(375px, 450px)
+            height: 1500px
+        @include respond(320px, 375px)
+            height: 1400px
+        @include respond(300px, 320px)
+            height: 1200px   
     div#examples-container::before, div#examples-container::after
         content: ""
         flex-basis: 100%
         width: 0
         order: 2
 
-    img:nth-child(3n+1)
-        order: 1
+    @include respond(300px, 500px)
+        img:nth-child(1n+1)
+            order: 1
 
-    img:nth-child(3n+2)
-        order: 2
-        
-    img:nth-child(3n)
-        order: 3
+        img:nth-child(2n+2)
+            order: 2
+    @include respond(501px, 3000px)
+        img:nth-child(3n+1)
+            order: 1
+
+        img:nth-child(3n+2)
+            order: 2
+            
+        img:nth-child(3n)
+            order: 3

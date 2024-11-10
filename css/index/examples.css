@@ -20,6 +20,11 @@ section#examples div#examples-container img {
   scale: 1;
   transition: scale 0.5s ease;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  section#examples div#examples-container img {
+    width: 49%;
+  }
+}
 section#examples div#examples-container img:hover {
   scale: 1.05;
 }
@@ -38,9 +43,34 @@ section#examples div#examples-container img:hover {
     height: 2000px;
   }
 }
-@media (min-width: 500px) and (max-width: 1020px) {
+@media (min-width: 600px) and (max-width: 1020px) {
   section#examples div#examples-container {
     height: 1500px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  section#examples div#examples-container {
+    height: 1200px;
+  }
+}
+@media (min-width: 450px) and (max-width: 500px) {
+  section#examples div#examples-container {
+    height: 2000px;
+  }
+}
+@media (min-width: 375px) and (max-width: 450px) {
+  section#examples div#examples-container {
+    height: 1500px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  section#examples div#examples-container {
+    height: 1400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 320px) {
+  section#examples div#examples-container {
+    height: 1200px;
   }
 }
 section#examples div#examples-container::before, section#examples div#examples-container::after {
@@ -49,14 +79,24 @@ section#examples div#examples-container::before, section#examples div#examples-c
   width: 0;
   order: 2;
 }
-section#examples img:nth-child(3n+1) {
-  order: 1;
+@media (min-width: 300px) and (max-width: 500px) {
+  section#examples img:nth-child(1n+1) {
+    order: 1;
+  }
+  section#examples img:nth-child(2n+2) {
+    order: 2;
+  }
 }
-section#examples img:nth-child(3n+2) {
-  order: 2;
-}
-section#examples img:nth-child(3n) {
-  order: 3;
+@media (min-width: 501px) and (max-width: 3000px) {
+  section#examples img:nth-child(3n+1) {
+    order: 1;
+  }
+  section#examples img:nth-child(3n+2) {
+    order: 2;
+  }
+  section#examples img:nth-child(3n) {
+    order: 3;
+  }
 }
 
 /*# sourceMappingURL=examples.css.map */

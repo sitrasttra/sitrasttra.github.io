@@ -45,9 +45,15 @@ button {
 }
 
 h1, h2 {
+  margin-top: 20px;
   font-family: "Tupo Vyaz VF", sans-serif;
   letter-spacing: 0.05em;
   font-size: 3em;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  h1, h2 {
+    font-size: 2em;
+  }
 }
 
 a {
@@ -58,6 +64,7 @@ a {
 body {
   position: relative;
   padding-top: 75px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;
@@ -133,6 +140,13 @@ header nav a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  header nav a {
+    padding: 5px;
+    width: min-content;
+    font-size: 1.5em;
+  }
+}
 header nav a:hover {
   background-color: #f1f1f1;
 }
@@ -144,6 +158,8 @@ header.rolled {
 footer {
   position: absolute;
   top: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   width: 100%;
@@ -154,6 +170,26 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    height: 100px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    height: 75px;
+  }
 }
 
 section#contact-me {
@@ -166,6 +202,21 @@ section#contact-me {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+@media (min-width: 300px) and (max-width: 1025px) {
+  section#contact-me {
+    flex-direction: column;
+  }
+}
+@media (min-width: 300px) and (max-width: 1025px) {
+  section#contact-me {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 section#contact-me div.text {
   z-index: 1;
@@ -174,8 +225,28 @@ section#contact-me div.text {
 section#contact-me div.text h1 {
   font-size: 4em;
 }
+@media (min-width: 760px) and (max-width: 1025px) {
+  section#contact-me div.text h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 300px) and (max-width: 760px) {
+  section#contact-me div.text h1 {
+    font-size: 2em;
+  }
+}
 section#contact-me div.text p {
   font-size: 2em;
+}
+@media (min-width: 760px) and (max-width: 1025px) {
+  section#contact-me div.text p {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 300px) and (max-width: 760px) {
+  section#contact-me div.text p {
+    font-size: 1em;
+  }
 }
 section#contact-me div#links {
   display: flex;
@@ -195,9 +266,24 @@ section#contact-me div#links a {
   font-size: 2em;
   transition: color 0.5s ease;
 }
+@media (min-width: 760px) and (max-width: 1025px) {
+  section#contact-me div#links a {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 300px) and (max-width: 760px) {
+  section#contact-me div#links a {
+    font-size: 1em;
+  }
+}
 section#contact-me div#links a img {
   height: 75px;
   aspect-ratio: 1/1;
+}
+@media (min-width: 300px) and (max-width: 1025px) {
+  section#contact-me div#links a img {
+    height: 50px;
+  }
 }
 section#contact-me div#links a:hover {
   color: #4285f4;

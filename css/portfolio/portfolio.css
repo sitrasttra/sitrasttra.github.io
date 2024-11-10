@@ -45,9 +45,15 @@ button {
 }
 
 h1, h2 {
+  margin-top: 20px;
   font-family: "Tupo Vyaz VF", sans-serif;
   letter-spacing: 0.05em;
   font-size: 3em;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  h1, h2 {
+    font-size: 2em;
+  }
 }
 
 a {
@@ -58,6 +64,7 @@ a {
 body {
   position: relative;
   padding-top: 75px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;
@@ -133,6 +140,13 @@ header nav a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  header nav a {
+    padding: 5px;
+    width: min-content;
+    font-size: 1.5em;
+  }
+}
 header nav a:hover {
   background-color: #f1f1f1;
 }
@@ -144,6 +158,8 @@ header.rolled {
 footer {
   position: absolute;
   top: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   width: 100%;
@@ -154,6 +170,26 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    height: 100px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    height: 75px;
+  }
 }
 
 section.project {
@@ -171,10 +207,37 @@ section.project {
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
+  text-align: center;
+}
+@media (min-width: 600px) and (max-width: 1025px) {
+  section.project {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  section.project {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 section.project p {
   font-size: 2em;
   text-align: justify;
+}
+@media (min-width: 600px) and (max-width: 1025px) {
+  section.project p {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  section.project p {
+    font-size: 1em;
+  }
 }
 section.project div.carousel {
   position: relative;
@@ -198,6 +261,11 @@ section.project div.carousel button {
   border: 2px solid transparent;
   transition: border 0.5s;
   user-select: none;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  section.project div.carousel button {
+    height: 50px;
+  }
 }
 section.project div.carousel button.left {
   left: 0;

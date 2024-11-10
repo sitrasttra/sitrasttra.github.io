@@ -45,9 +45,15 @@ button {
 }
 
 h1, h2 {
+  margin-top: 20px;
   font-family: "Tupo Vyaz VF", sans-serif;
   letter-spacing: 0.05em;
   font-size: 3em;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  h1, h2 {
+    font-size: 2em;
+  }
 }
 
 a {
@@ -58,6 +64,7 @@ a {
 body {
   position: relative;
   padding-top: 75px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;
@@ -133,6 +140,13 @@ header nav a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  header nav a {
+    padding: 5px;
+    width: min-content;
+    font-size: 1.5em;
+  }
+}
 header nav a:hover {
   background-color: #f1f1f1;
 }
@@ -143,9 +157,16 @@ header.rolled {
 
 section#welcome {
   height: 80vh;
-  padding: 0;
+  padding-right: 0;
+  padding-left: 20px;
+  padding-bottom: 30px;
   background-color: #c4c4c4;
   justify-content: center;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  section#welcome {
+    flex-direction: column-reverse;
+  }
 }
 section#welcome div.background {
   width: 50%;
@@ -156,6 +177,11 @@ section#welcome div.background {
   background-image: url("../../assets/bg.png");
   pointer-events: none;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  section#welcome div.background {
+    width: 100%;
+  }
+}
 section#welcome div.text {
   width: 50%;
   background-color: transparent;
@@ -164,9 +190,25 @@ section#welcome div.text {
   letter-spacing: auto;
   text-align: center;
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  section#welcome div.text {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  section#welcome div.text {
+    font-size: 1.5em;
+    width: 100%;
+  }
+}
 
 section#about-me {
   gap: 50px;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  section#about-me {
+    flex-direction: column-reverse;
+  }
 }
 section#about-me div.text {
   z-index: 1;
@@ -178,10 +220,31 @@ section#about-me div.text {
   flex-direction: column;
   gap: 10px;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  section#about-me div.text {
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2561px) {
+  section#about-me div.text {
+    width: 50%;
+    font-size: 2em;
+  }
+}
 section#about-me div.avatar {
   position: relative;
   height: 400px;
   aspect-ratio: 1/1;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  section#about-me div.avatar {
+    height: 250px;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2561px) {
+  section#about-me div.avatar {
+    height: 500px;
+  }
 }
 section#about-me div.avatar img {
   position: relative;
@@ -223,9 +286,21 @@ section#services #services-container section.service {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  section#services #services-container section.service {
+    width: 300px;
+    height: min-content;
+    font-size: 0.75em;
+  }
+}
 section#services #services-container section.service img {
   height: 150px;
   aspect-ratio: 1/1;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  section#services #services-container section.service img {
+    height: 75px;
+  }
 }
 section#services #services-container section.service div.text h2 {
   font-size: 2em;
@@ -256,6 +331,11 @@ section#examples div#examples-container img {
   scale: 1;
   transition: scale 0.5s ease;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  section#examples div#examples-container img {
+    width: 49%;
+  }
+}
 section#examples div#examples-container img:hover {
   scale: 1.05;
 }
@@ -274,9 +354,34 @@ section#examples div#examples-container img:hover {
     height: 2000px;
   }
 }
-@media (min-width: 500px) and (max-width: 1020px) {
+@media (min-width: 600px) and (max-width: 1020px) {
   section#examples div#examples-container {
     height: 1500px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  section#examples div#examples-container {
+    height: 1200px;
+  }
+}
+@media (min-width: 450px) and (max-width: 500px) {
+  section#examples div#examples-container {
+    height: 2000px;
+  }
+}
+@media (min-width: 375px) and (max-width: 450px) {
+  section#examples div#examples-container {
+    height: 1500px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  section#examples div#examples-container {
+    height: 1400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 320px) {
+  section#examples div#examples-container {
+    height: 1200px;
   }
 }
 section#examples div#examples-container::before, section#examples div#examples-container::after {
@@ -285,19 +390,31 @@ section#examples div#examples-container::before, section#examples div#examples-c
   width: 0;
   order: 2;
 }
-section#examples img:nth-child(3n+1) {
-  order: 1;
+@media (min-width: 300px) and (max-width: 500px) {
+  section#examples img:nth-child(1n+1) {
+    order: 1;
+  }
+  section#examples img:nth-child(2n+2) {
+    order: 2;
+  }
 }
-section#examples img:nth-child(3n+2) {
-  order: 2;
-}
-section#examples img:nth-child(3n) {
-  order: 3;
+@media (min-width: 501px) and (max-width: 3000px) {
+  section#examples img:nth-child(3n+1) {
+    order: 1;
+  }
+  section#examples img:nth-child(3n+2) {
+    order: 2;
+  }
+  section#examples img:nth-child(3n) {
+    order: 3;
+  }
 }
 
 footer {
   position: absolute;
   top: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   width: 100%;
@@ -308,12 +425,33 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    height: 100px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    height: 75px;
+  }
 }
 
 main {
   padding-top: 0;
 }
 main > section {
+  margin-top: 50px;
   position: relative;
   padding-left: 100px;
   padding-right: 100px;
@@ -324,6 +462,18 @@ main > section {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  main > section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1440px) {
+  main > section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 main > section div.text {
   z-index: 1;

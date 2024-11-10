@@ -2,6 +2,9 @@
 @use "../global/vars" as *
 section#about-me
     gap: 50px
+
+    @include respond(300px, 768px)
+        flex-direction: column-reverse
     
     div.text
         z-index: 1
@@ -15,6 +18,11 @@ section#about-me
         display: flex
         flex-direction: column
         gap: 10px
+        @include respond(300px, 425px)
+            width: 100%
+        @include respond(2000px, 2561px)
+            width: 50%
+            font-size: 2em
 
         
     div.avatar
@@ -22,6 +30,11 @@ section#about-me
 
         height: 400px
         aspect-ratio: 1/1
+
+        @include respond(300px, 425px)
+            height: 250px
+        @include respond(2000px, 2561px)
+            height: 500px
 
         img
             position: relative

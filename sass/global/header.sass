@@ -50,6 +50,12 @@ header
             justify-content: center
             align-items: center
 
+            @include respond(300px, 500px)
+                padding: 5px
+                width: min-content
+                font-size: 1.5em
+            
+
         a:hover
             background-color: $light-grey-color
 header.rolled

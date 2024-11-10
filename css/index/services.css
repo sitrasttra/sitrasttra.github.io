@@ -27,9 +27,21 @@ section#services #services-container section.service {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  section#services #services-container section.service {
+    width: 300px;
+    height: min-content;
+    font-size: 0.75em;
+  }
+}
 section#services #services-container section.service img {
   height: 150px;
   aspect-ratio: 1/1;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  section#services #services-container section.service img {
+    height: 75px;
+  }
 }
 section#services #services-container section.service div.text h2 {
   font-size: 2em;

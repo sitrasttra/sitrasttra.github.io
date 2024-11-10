@@ -36,9 +36,16 @@ section#services
             justify-content: space-around
             align-items: center
 
+            @include respond(300px, 500px)
+                width: 300px
+                height: min-content
+                font-size: .75em
+
             img
                 height: 150px
                 aspect-ratio: 1/1
+                @include respond(300px, 500px)
+                    height: 75px
             
             div.text
                 h2

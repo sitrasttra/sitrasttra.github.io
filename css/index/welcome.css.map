@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/index/welcome.sass"],"names":[],"mappings":"AAAA;EACI;EACA;EAEA;EAEA;;AAEA;EACI;EACA;EAEA;EACA;EACA;EACA;EAEA;;AACJ;EACI;EAEA;EAEA;EACA;EACA;EACA","file":"welcome.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/index/welcome.sass","../../sass/global/vars.sass"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EAEA;EAEA;;ACIA;EDZJ;IAWQ;;;AAEJ;EACI;EACA;EAEA;EACA;EACA;EACA;EAEA;;ACVJ;EDCA;IAYQ;;;AACR;EACI;EAEA;EAEA;EACA;EACA;EACA;;ACtBJ;EDcA;IAWQ;;;ACzBR;EDcA;IAaQ;IACA","file":"welcome.css"}

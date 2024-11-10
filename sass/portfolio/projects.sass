@@ -19,9 +19,27 @@ section.project
     align-items: center
     gap: 20px
 
+    text-align: center
+
+    @include respond(600px, 1025px)
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 20px
+        padding-right: 20px
+
+    @include respond(300px, 600px)
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 10px
+        padding-right: 10px
+
     p
         font-size: 2em
         text-align: justify
+        @include respond(600px, 1025px)
+            font-size: 1.5em
+        @include respond(300px, 600px)
+            font-size: 1em
 
     div.carousel
         position: relative
@@ -52,6 +70,9 @@ section.project
             transition: border $animation-time
 
             user-select: none
+
+            @include respond(300px, 600px)
+                height: 50px
         
         button.left
             left: 0

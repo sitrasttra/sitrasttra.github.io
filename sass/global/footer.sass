@@ -1,6 +1,10 @@
+@use "../global/vars" as *
+    
 footer
     position: absolute
     top: 100%
+    padding-top: 20px
+    padding-bottom: 20px
     padding-left: 100px
     padding-right: 100px
 
@@ -15,3 +19,18 @@ footer
     display: flex
     justify-content: space-between
     align-items: center
+    text-align: center
+
+    @include respond(500px, 800px)
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 20px
+        padding-right: 20px
+        font-size: 1.5em
+        height: 100px
+    @include respond(300px, 500px)
+        flex-direction: column
+        padding-left: 10px
+        padding-right: 10px
+        font-size: 1em
+        height: 75px
