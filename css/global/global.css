@@ -64,7 +64,6 @@ a {
 body {
   position: relative;
   padding-top: 75px;
-  min-width: 100vw;
   min-height: 100vh;
   background-color: #f1f1f1;
   display: flex;
