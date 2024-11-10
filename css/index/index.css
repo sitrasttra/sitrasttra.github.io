@@ -163,7 +163,7 @@ section#welcome {
   background-color: #c4c4c4;
   justify-content: center;
 }
-@media (min-width: 300px) and (max-width: 425px) {
+@media (min-width: 300px) and (max-width: 800px) {
   section#welcome {
     flex-direction: column-reverse;
   }
@@ -177,7 +177,7 @@ section#welcome div.background {
   background-image: url("../../assets/bg.png");
   pointer-events: none;
 }
-@media (min-width: 300px) and (max-width: 425px) {
+@media (min-width: 300px) and (max-width: 800px) {
   section#welcome div.background {
     width: 100%;
   }
@@ -195,7 +195,7 @@ section#welcome div.text {
     font-size: 1.5em;
   }
 }
-@media (min-width: 300px) and (max-width: 425px) {
+@media (min-width: 300px) and (max-width: 800px) {
   section#welcome div.text {
     font-size: 1.5em;
     width: 100%;

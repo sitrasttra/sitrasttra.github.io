@@ -15,8 +15,12 @@ main
 
         h1
             font-size: 4em
+            @include respond(300px, 600px)
+                font-size: 3em
 
         p
             font-size: 2em
+            @include respond(300px, 600px)
+                font-size: 1.5em
             
 

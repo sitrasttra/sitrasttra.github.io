@@ -302,8 +302,18 @@ main section#intro {
 main section#intro h1 {
   font-size: 4em;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+  main section#intro h1 {
+    font-size: 3em;
+  }
+}
 main section#intro p {
   font-size: 2em;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  main section#intro p {
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=portfolio.css.map */
