@@ -231,6 +231,11 @@ section#about-me div.text {
     font-size: 2em;
   }
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  section#about-me div.text {
+    font-size: 1em;
+  }
+}
 section#about-me div.avatar {
   position: relative;
   height: 400px;
